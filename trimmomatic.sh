@@ -20,6 +20,9 @@ mkdir /scratch/course/2023w300106/katya/SRR24348401/trim
 cd trim
 
 ### ACTUAL COMMAND WE WILL BE USING
+# we trimmed the fastq files using the adapter sequences in ILLUMINACLIP (2 -mismatches, Threshold: 30 - maximum score 10 - value if single ended reads)
+# SLIDINGWINDOW (6 - number of bases in the window, 15 - score after it everything is trimmed), MINLEN (75 - minimum length of the reads)
+
 trimmomatic PE -threads 8 \
 -trimlog trimmomatic.log \
 -summary trimmomatic.summary.txt \
