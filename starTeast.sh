@@ -22,6 +22,7 @@ mkdir ex5
 cd ex5
 
 ### RUNNING THE COMMAND
+# we test the reads if they are mapped to the genome, the output is sorted BAM file
 STAR --runThreadN 16 \
 --genomeDir /scratch/course/2023w300106/katya/ncbi_dataset/data/GCF_932526225.1/jaNemVect1.1_STAR \
 --readFilesIn /scratch/course/2023w300106/katya/SRR24348401/SRR24348401_1.fastq /scratch/course/2023w300106/katya/SRR24348401/SRR24348401_2.fastq \
